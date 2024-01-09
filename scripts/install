@@ -49,6 +49,8 @@ ynh_setup_source --dest_dir="$install_dir"
 # ownership to all files such as after the ynh_setup_source step
 chown -R $app:www-data "$install_dir"
 
+ynh_package_install webhook
+
 #=================================================
 # SYSTEM CONFIGURATION
 #=================================================
